@@ -6,6 +6,7 @@ import {
   Link,
   Outlet,
 } from "react-router-dom";
+import "./styles.scss";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -51,8 +52,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
-      <RouterProvider router={router} />
+    <div className="app">
+      <div className="container">
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }
